@@ -7,8 +7,8 @@ namespace Core;
 class Controller
 {
 
-    function __construct()
-    {
-        echo __CLASS__;
-    }
+	function __construct()
+	{
+		$this->config = new \Config\Application;
+	}
 }
