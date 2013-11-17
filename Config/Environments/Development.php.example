@@ -1,0 +1,18 @@
+<?php
+
+namespace Config\Environments;
+/**
+*
+*/
+
+class Development
+{
+	static public $config = array(
+		'base_url' =>  'http://localhost/',
+		'database' => array(
+			'username' => '',
+			'password' => '',
+			'database' => ''
+			)
+		);
+}
