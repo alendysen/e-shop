@@ -17,6 +17,8 @@ class Home extends \Core\Controller
 	public function index()
 	{
 		$this->post->select();
-		\Core\Common::c($this->post->getResult());
+		$this->view->assign('listUser', $this->post->getResult());
+		$this->view->assign('title', 'Home');
+		$this->view->draw('index');
 	}
 }

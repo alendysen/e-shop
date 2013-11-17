@@ -12,9 +12,8 @@ class Model extends DBAdapter
 		$this->db_name = \Config\Application::database()['database'];
 
 		$this->connect();
-		$split_namespace = explode('\\', get_class($this));
-		$_table = strtolower(end($split_namespace));
-		$this->table = $_table;
+
+		$this->table = strtolower(Common::getClass($this));
 		if(!$this->tableExists($this->table)){
 			throw new MyException("table " . $this->table . " not found");
 		}

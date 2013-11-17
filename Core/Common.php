@@ -39,4 +39,10 @@ box-sizing: border-box;\">";
 
 		return false;
 	}
+
+	static public function getClass($obj)
+	{
+		$split_namespace = explode('\\', get_class($obj));
+		return end($split_namespace);
+	}
 }
