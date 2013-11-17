@@ -4,7 +4,3 @@
 * export himsi.sql ke database
 
 note: table posts di database itu cuma buat ngetes aja
-
-### TODO
-
-* Integrate View
