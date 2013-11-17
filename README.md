@@ -5,4 +5,4 @@
 
 ### TODO
 
-* Buat database adapter
+* Integrate View
