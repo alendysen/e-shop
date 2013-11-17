@@ -12,7 +12,7 @@ class Router
 		$self = new Router;
 		$self->request_uri = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
 		if (empty($self->request_uri[0]) || stristr($self->request_uri[0], 'index.php')) {
-			$self->params['controller'] = \Config\Application::$default_controller;
+			$self->params['controller'] = \Config\Application::default_controller();
 			$self->params['method'] = 'index';
 		}else{
 			$self->params['controller'] = ucfirst($self->request_uri[0]);
