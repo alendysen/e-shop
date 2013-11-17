@@ -2,3 +2,4 @@
 Config/Environments/Development.php
 Config/Environments/Test.php
 Config/Environments/Production.php
+tmp/
