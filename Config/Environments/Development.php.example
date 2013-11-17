@@ -10,6 +10,7 @@ class Development
 	static public $config = array(
 		'base_url' =>  'http://localhost/',
 		'database' => array(
+			'host'     => '',
 			'username' => '',
 			'password' => '',
 			'database' => ''

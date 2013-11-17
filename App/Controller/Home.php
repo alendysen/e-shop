@@ -8,13 +8,15 @@ namespace App\Controller;
 class Home extends \Core\Controller
 {
 
-    function __construct()
-    {
-        parent::__construct();
-    }
+	function __construct()
+	{
+		parent::__construct();
+		$this->post = new \App\Model\Posts;
+	}
 
-    public function index()
-    {
-        \Core\Common::c($this->config->database());
-    }
+	public function index()
+	{
+		$this->post->select();
+		\Core\Common::c($this->post->getResult());
+	}
 }
